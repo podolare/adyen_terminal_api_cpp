@@ -1,0 +1,34 @@
+{
+  "SaleToPOIRequest" :
+  {
+    "MessageHeader" :
+    {
+      "MessageCategory" : "Payment",
+      "MessageClass" : "Service",
+      "MessageType" : "Request",
+      "POIID" : "P400Plus-275103190",
+      "ProtocolVersion" : "3.0",
+      "SaleID" : "CashRegisterId",
+      "ServiceID" : "1532669969"
+    },
+    "PaymentRequest" :
+    {
+      "PaymentTransaction" :
+      {
+        "AmountsReq" :
+        {
+          "Currency" : "EUR",
+          "RequestedAmount" : 109.90000000000001
+        }
+      },
+      "SaleData" :
+      {
+        "SaleTransactionID" :
+        {
+          "TimeStamp" : "2020-02-05T12:07:16Z",
+          "TransactionID" : "MerchantRef1532669969"
+        }
+      }
+    }
+  }
+}

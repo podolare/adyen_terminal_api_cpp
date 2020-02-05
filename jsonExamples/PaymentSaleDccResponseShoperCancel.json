@@ -1,0 +1,69 @@
+{
+  "SaleToPOIResponse" :
+  {
+    "MessageHeader" :
+    {
+      "MessageCategory" : "Payment",
+      "MessageClass" : "Service",
+      "MessageType" : "Response",
+      "POIID" : "P400Plus-275103190",
+      "ProtocolVersion" : "3.0",
+      "SaleID" : "CashRegisterId",
+      "ServiceID" : "1540670101"
+    },
+    "PaymentResponse" :
+    {
+      "POIData" :
+      {
+        "POIReconciliationID" : "1000",
+        "POITransactionID" :
+        {
+          "TimeStamp" : "2020-02-05T11:15:12.000Z",
+          "TransactionID" : "57lm001580901312006"
+        }
+      },
+      "PaymentResult" :
+      {
+        "CustomerLanguage" : "fr",
+        "PaymentAcquirerData" :
+        {
+          "AcquirerPOIID" : "P400Plus-275103190",
+          "MerchantID" : "TestMerchantPOSPrze"
+        },
+        "PaymentInstrumentData" :
+        {
+          "CardData" :
+          {
+            "CardCountryCode" : "840",
+            "EntryMode" :
+            [
+              "ICC"
+            ],
+            "MaskedPan" : "541333 **** 9990",
+            "PaymentBrand" : "mc",
+            "SensitiveCardData" :
+            {
+              "CardSeqNumb" : "53",
+              "ExpiryDate" : "0228"
+            }
+          },
+          "PaymentInstrumentType" : "Card"
+        }
+      },
+      "Response" :
+      {
+        "AdditionalResponse" : "refusalReason=110%20Shopper%20cancelled%20during%20dcc%20selection&tid=75103190&AID=A000000004101002&transactionType=GOODS_SERVICES&transactionLanguage=fr&backendGiftcardIndicator=false&posadditionalamounts.originalAmountValue=10990&expiryYear=2028&dcc.org.amount.value=10990&alias=A373176724022941&posAmountGratuityValue=0&giftcardIndicator=false&dcc.commissionfee=0&cardHolderName=TC04_MC_Approved_DCC&paymentMethodVariant=mc&expiryDate=2%2f2028&dcc.exchangerate=12738&dcc.converted.amount.currency=USD&applicationPreferredName=mc%20f&txtime=11%3a15%3a12&iso8601TxDate=2020-02-05T11%3a15%3a12.0000000%2b0000&cardType=mc&posOriginalAmountValue=10990&aliasType=Default&txdate=05-02-2020&paymentMethod=mc&dcc.markup=300&dcc.converted.amount.value=14000&cardIssueNumber=53&merchantReference=MerchantRef1540670101&applicationLabel=MCDCCFR&expiryMonth=02&cardSummary=9990&posadditionalamounts.originalAmountCurrency=EUR&dcc.source=oanda&posAuthAmountCurrency=EUR&message=110%20Shopper%20cancelled%20during%20dcc%20selection&cardIssuerCountryId=840&posAmountCashbackValue=0&posEntryMode=ICC&fundingSource=CREDIT&cardScheme=mc&cardBin=541333&posAuthAmountValue=10990&dcc.org.amount.currency=EUR",
+        "ErrorCondition" : "Cancel",
+        "Result" : "Failure"
+      },
+      "SaleData" :
+      {
+        "SaleTransactionID" :
+        {
+          "TimeStamp" : "2020-02-05T12:15:12.000Z",
+          "TransactionID" : "MerchantRef1540670101"
+        }
+      }
+    }
+  }
+}

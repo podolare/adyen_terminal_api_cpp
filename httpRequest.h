@@ -17,8 +17,7 @@ public:
     httpRequest(const char *url,
             std::map<std::string, std::string> &headers,
             std::string &data,
-            int timeout,
-            bool cloud);
+            int timeout);
 
     bool send();
     long getHttpResponseCode();
@@ -31,7 +30,6 @@ private:
     long httpResponseCode;
     std::stringstream httpResponse;
     int timeout;
-    bool cloud;
 
 private:
 #ifdef DEBUG_CURL

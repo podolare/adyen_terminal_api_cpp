@@ -1,0 +1,426 @@
+{
+  "SaleToPOIResponse" :
+  {
+    "MessageHeader" :
+    {
+      "MessageCategory" : "Payment",
+      "MessageClass" : "Service",
+      "MessageType" : "Response",
+      "POIID" : "P400Plus-275103190",
+      "ProtocolVersion" : "3.0",
+      "SaleID" : "CashRegisterId",
+      "ServiceID" : "1535140598"
+    },
+    "PaymentResponse" :
+    {
+      "POIData" :
+      {
+        "POIReconciliationID" : "1000",
+        "POITransactionID" :
+        {
+          "TimeStamp" : "2020-02-05T11:09:43.000Z",
+          "TransactionID" : "57lm001580900983004.8525809009987250"
+        }
+      },
+      "PaymentReceipt" :
+      [
+        {
+          "DocumentQualifier" : "CashierReceipt",
+          "OutputContent" :
+          {
+            "OutputFormat" : "Text",
+            "OutputText" :
+            [
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "key=header1"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "key=header2"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=MERCHANT%20COPY&key=merchantTitle"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Date&value=05%2f02%2f2020&key=txdate"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Time&value=11%3a09%3a43&key=txtime"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Card&value=%2a%2a%2a%2a%2a%2a%2a%2a%2a%2a%2a%2a9990&key=pan"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=PAN%20seq.&value=53&key=panSeq"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Pref.%20name&value=mc%20f&key=preferredName"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Card%20type&value=mc&key=cardType"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Payment%20method&value=mc&key=paymentMethod"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Payment%20variant&value=mc&key=paymentMethodVariant"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Entry%20mode&value=ICC&key=posEntryMode"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=CVM%20res.&value=PIN%20VERIFIED&key=cvmRes"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=AID&value=A000000004101002&key=aid"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=MID&value=1000&key=mid"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=TID&value=P400Plus-275103190&key=tid"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=PTID&value=75103190&key=ptid"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Auth.%20code&value=123456&key=authCode"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Tender&value=57lm001580900983004&key=txRef"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Reference&value=MerchantRef1535140598&key=mref"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Type&value=GOODS_SERVICES&key=txtype"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=TOTAL&value=%e2%82%ac%20109.90&key=totalAmount"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=APPROVED&key=approved"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=Transaction%20amount&value=USD%20140.00&key=dccshopperamount"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Today%27s%20exchange%20rate&value=1%20EUR%20%3d%201.274%20USD&key=dccrate"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Service%20fee&value=3.00%25&key=dccmarkup"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Source&value=oanda&key=dccsource"
+              }
+            ]
+          },
+          "RequiredSignatureFlag" : false
+        },
+        {
+          "DocumentQualifier" : "CustomerReceipt",
+          "OutputContent" :
+          {
+            "OutputFormat" : "Text",
+            "OutputText" :
+            [
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "key=header1"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "key=header2"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=COPIE%20TITULAIRE%20CARTE&key=cardholderHeader"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Date&value=05%2f02%2f2020&key=txdate"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Heure&value=11%3a09%3a43&key=txtime"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Carte&value=%2a%2a%2a%2a%2a%2a%2a%2a%2a%2a%2a%2a9990&key=pan"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=PAN%20seq.&value=53&key=panSeq"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Nom%20d%27usage&value=mc%20f&key=preferredName"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Type%20de%20carte&value=mc&key=cardType"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Mode%20de%20paiement&value=mc&key=paymentMethod"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Payment%20variant&value=mc&key=paymentMethodVariant"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Mode%20de%20saisie&value=ICC&key=posEntryMode"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=CVM%20res.&value=CODE%20PIN%20V%c3%89RIFI%c3%89&key=cvmRes"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=AID&value=A000000004101002&key=aid"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=MID&value=1000&key=mid"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=TID&value=P400Plus-275103190&key=tid"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=PTID&value=75103190&key=ptid"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Auth.%20code&value=123456&key=authCode"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Tender&value=57lm001580900983004&key=txRef"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=R%c3%a9f%c3%a9rence&value=MerchantRef1535140598&key=mref"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Type&value=D%c3%89BIT&key=txtype"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=Total&value=%e2%82%ac%20109.90&key=totalAmount"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=Approuv%c3%a9&key=approved"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=%c3%80%20conserver&key=retain"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=Montant%20transaction&value=USD%20140.00&key=dccshopperamount"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Taux%20de%20change%20du%20jour&value=1%20EUR%20%3d%201.274%20USD&key=dccrate"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Frais%20de%20service&value=3.00%25&key=dccmarkup"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Source&value=oanda&key=dccsource"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Un%20choix%20de%20devises%20m%e2%80%99a%20%c3%a9t%c3%a9%20propos%c3%a9%20et%20j%27ai%20choisi%20d%27accepter%20l%e2%80%99option%20DCC%20et%20de%20payer%20en%20USD%20au%20taux%20de%20change%20fourni%20par%20Adyen%20N.V.&key=dccexpl"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Merci&key=thanks"
+              }
+            ]
+          },
+          "RequiredSignatureFlag" : false
+        }
+      ],
+      "PaymentResult" :
+      {
+        "AmountsResp" :
+        {
+          "AuthorizedAmount" : 109.90000000000001,
+          "Currency" : "EUR"
+        },
+        "AuthenticationMethod" :
+        [
+          "OfflinePIN"
+        ],
+        "CurrencyConversion" :
+        [
+          {
+            "ConvertedAmount" :
+            {
+              "AmountValue" : 140,
+              "Currency" : "USD"
+            },
+            "CustomerApprovedFlag" : true,
+            "Markup" : 3,
+            "Rate" : 1.2738
+          }
+        ],
+        "CustomerLanguage" : "fr",
+        "OnlineFlag" : true,
+        "PaymentAcquirerData" :
+        {
+          "AcquirerPOIID" : "P400Plus-275103190",
+          "AcquirerTransactionID" :
+          {
+            "TimeStamp" : "2020-02-05T11:09:43.000Z",
+            "TransactionID" : "8525809009987250"
+          },
+          "ApprovalCode" : "123456",
+          "MerchantID" : "TestMerchantPOSPrze"
+        },
+        "PaymentInstrumentData" :
+        {
+          "CardData" :
+          {
+            "CardCountryCode" : "840",
+            "EntryMode" :
+            [
+              "ICC"
+            ],
+            "MaskedPan" : "541333 **** 9990",
+            "PaymentBrand" : "mc",
+            "SensitiveCardData" :
+            {
+              "CardSeqNumb" : "53",
+              "ExpiryDate" : "0228"
+            }
+          },
+          "PaymentInstrumentType" : "Card"
+        }
+      },
+      "Response" :
+      {
+        "AdditionalResponse" : "tid=75103190&AID=A000000004101002&transactionType=GOODS_SERVICES&transactionLanguage=fr&backendGiftcardIndicator=false&posadditionalamounts.originalAmountValue=10990&expiryYear=2028&acquirerAccountCode=TestPmmAcquirerAccount&dcc.org.amount.value=10990&alias=A373176724022941&posAmountGratuityValue=0&giftcardIndicator=false&authorisedAmountValue=10990&retry.attempt1.shopperInteraction=POS&dcc.commissionfee=0&pspReference=8525809009987250&cardHolderName=TC04_MC_Approved_DCC&paymentMethodVariant=mc&expiryDate=2%2f2028&refusalReasonRaw=APPROVED&authorisationMid=1000&dcc.exchangerate=12738&dcc.converted.amount.currency=USD&applicationPreferredName=mc%20f&acquirerCode=TestPmmAcquirer&txtime=11%3a09%3a43&iso8601TxDate=2020-02-05T11%3a09%3a43.0000000%2b0000&cardType=mc&posOriginalAmountValue=10990&offline=false&aliasType=Default&txdate=05-02-2020&paymentMethod=mc&cvcResult=0%20Unknown&authorisedAmountCurrency=EUR&dcc.markup=300&tc=E8DE2D29EC28E347&avsResult=0%20Unknown&dcc.converted.amount.value=14000&cardIssueNumber=53&mid=1000&merchantReference=MerchantRef1535140598&transactionReferenceNumber=8525809009987250&applicationLabel=MCDCCFR&expiryMonth=02&cardSummary=9990&posadditionalamounts.originalAmountCurrency=EUR&dcc.source=oanda&posAuthAmountCurrency=EUR&cardHolderVerificationMethodResults=440002&authCode=123456&cardIssuerCountryId=840&posAmountCashbackValue=0&posEntryMode=ICC&fundingSource=CREDIT&cardScheme=mc&cardBin=541333&posAuthAmountValue=10990&dcc.org.amount.currency=EUR",
+        "Result" : "Success"
+      },
+      "SaleData" :
+      {
+        "SaleTransactionID" :
+        {
+          "TimeStamp" : "2020-02-05T12:09:43.000Z",
+          "TransactionID" : "MerchantRef1535140598"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "SaleToPOIResponse" :
+  {
+    "MessageHeader" :
+    {
+      "MessageCategory" : "Payment",
+      "MessageClass" : "Service",
+      "MessageType" : "Response",
+      "POIID" : "P400Plus-275103190",
+      "ProtocolVersion" : "3.0",
+      "SaleID" : "CashRegisterId",
+      "ServiceID" : "1537880139"
+    },
+    "PaymentResponse" :
+    {
+      "POIData" :
+      {
+        "POIReconciliationID" : "1000",
+        "POITransactionID" :
+        {
+          "TimeStamp" : "2020-02-05T11:12:26.000Z",
+          "TransactionID" : "57lm001580901146005.8815809011538744"
+        }
+      },
+      "PaymentReceipt" :
+      [
+        {
+          "DocumentQualifier" : "CashierReceipt",
+          "OutputContent" :
+          {
+            "OutputFormat" : "Text",
+            "OutputText" :
+            [
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "key=header1"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "key=header2"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=MERCHANT%20COPY&key=merchantTitle"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Date&value=05%2f02%2f2020&key=txdate"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Time&value=11%3a12%3a26&key=txtime"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Card%20type&value=alipay&key=cardType"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Payment%20method&value=alipay&key=paymentMethod"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Payment%20variant&value=alipay&key=paymentMethodVariant"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Entry%20mode&value=Barcode&key=posEntryMode"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=MID&value=1&key=mid"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=TID&value=P400Plus-275103190&key=tid"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=PTID&value=75103190&key=ptid"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Buyer%20ID&value=12345678&key=buyerId"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Operation%20type&value=alipay&key=walletOperationType"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Transaction%20ref.&value=9876543210&key=walletTransactionReference"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=DCC%20amount&value=100.00%20CNY&key=walletDccAmount"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=DCC%20rate&value=0.12345&key=walletDccRate"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Tender&value=57lm001580901146005&key=txRef"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Reference&value=MerchantRef1537880139&key=mref"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Type&value=GOODS_SERVICES&key=txtype"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=TOTAL&value=%e2%82%ac%20109.90&key=totalAmount"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=APPROVED&key=approved"
+              }
+            ]
+          },
+          "RequiredSignatureFlag" : false
+        },
+        {
+          "DocumentQualifier" : "CustomerReceipt",
+          "OutputContent" :
+          {
+            "OutputFormat" : "Text",
+            "OutputText" :
+            [
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "key=header1"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "key=header2"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=CARDHOLDER%20COPY&key=cardholderHeader"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Date&value=05%2f02%2f2020&key=txdate"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Time&value=11%3a12%3a26&key=txtime"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Card%20type&value=alipay&key=cardType"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Payment%20method&value=alipay&key=paymentMethod"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Payment%20variant&value=alipay&key=paymentMethodVariant"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Entry%20mode&value=Barcode&key=posEntryMode"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=MID&value=1&key=mid"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=TID&value=P400Plus-275103190&key=tid"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=PTID&value=75103190&key=ptid"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Buyer%20ID&value=12345678&key=buyerId"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Operation%20type&value=alipay&key=walletOperationType"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Transaction%20ref.&value=9876543210&key=walletTransactionReference"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=DCC%20amount&value=100.00%20CNY&key=walletDccAmount"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=DCC%20rate&value=0.12345&key=walletDccRate"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Tender&value=57lm001580901146005&key=txRef"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Reference&value=MerchantRef1537880139&key=mref"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Type&value=GOODS_SERVICES&key=txtype"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=TOTAL&value=%e2%82%ac%20109.90&key=totalAmount"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=APPROVED&key=approved"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Retain%20for%20your%20records&key=retain"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Thank%20you&key=thanks"
+              }
+            ]
+          },
+          "RequiredSignatureFlag" : false
+        }
+      ],
+      "PaymentResult" :
+      {
+        "AmountsResp" :
+        {
+          "AuthorizedAmount" : 109.90000000000001,
+          "Currency" : "EUR"
+        },
+        "OnlineFlag" : true,
+        "PaymentAcquirerData" :
+        {
+          "AcquirerPOIID" : "P400Plus-275103190",
+          "AcquirerTransactionID" :
+          {
+            "TimeStamp" : "2020-02-05T11:12:26.000Z",
+            "TransactionID" : "8815809011538744"
+          },
+          "MerchantID" : "TestMerchantPOSPrze"
+        },
+        "PaymentInstrumentData" :
+        {
+          "CardData" :
+          {
+            "EntryMode" :
+            [
+              "Scanned"
+            ],
+            "PaymentBrand" : "alipay"
+          },
+          "PaymentInstrumentType" : "Card"
+        }
+      },
+      "Response" :
+      {
+        "AdditionalResponse" : "tid=75103190&transactionType=GOODS_SERVICES&backendGiftcardIndicator=false&posadditionalamounts.originalAmountValue=10990&posAmountGratuityValue=0&giftcardIndicator=false&pspReference=8815809011538744&paymentMethodVariant=alipay&txtime=11%3a12%3a26&iso8601TxDate=2020-02-05T11%3a12%3a26.0000000%2b0000&cardType=alipay&posOriginalAmountValue=10990&offline=false&txdate=05-02-2020&paymentMethod=alipay&mid=1&merchantReference=MerchantRef1537880139&transactionReferenceNumber=8815809011538744&posadditionalamounts.originalAmountCurrency=EUR&posAuthAmountCurrency=EUR&posAmountCashbackValue=0&posEntryMode=BAR&cardScheme=alipay&posAuthAmountValue=10990",
+        "Result" : "Success"
+      },
+      "SaleData" :
+      {
+        "SaleTransactionID" :
+        {
+          "TimeStamp" : "2020-02-05T12:12:26.000Z",
+          "TransactionID" : "MerchantRef1537880139"
+        }
+      }
+    }
+  }
+}

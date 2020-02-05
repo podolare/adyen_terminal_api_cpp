@@ -1,0 +1,25 @@
+{
+  "SaleToPOIRequest" :
+  {
+    "AbortRequest" :
+    {
+      "AbortReason" : "MerchantAbort",
+      "MessageReference" :
+      {
+        "MessageCategory" : "Payment",
+        "SaleID" : "CashRegisterId",
+        "ServiceID" : "688414860"
+      }
+    },
+    "MessageHeader" :
+    {
+      "MessageCategory" : "Abort",
+      "MessageClass" : "Service",
+      "MessageType" : "Request",
+      "POIID" : "P400Plus-275103190",
+      "ProtocolVersion" : "3.0",
+      "SaleID" : "CashRegisterId",
+      "ServiceID" : "831258110"
+    }
+  }
+}

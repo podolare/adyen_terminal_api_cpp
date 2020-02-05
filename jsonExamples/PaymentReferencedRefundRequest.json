@@ -1,0 +1,27 @@
+{
+  "SaleToPOIRequest" :
+  {
+    "MessageHeader" :
+    {
+      "MessageCategory" : "Reversal",
+      "MessageClass" : "Service",
+      "MessageType" : "Request",
+      "POIID" : "P400Plus-275103190",
+      "ProtocolVersion" : "3.0",
+      "SaleID" : "CashRegisterId",
+      "ServiceID" : "523690347"
+    },
+    "ReversalRequest" :
+    {
+      "OriginalPOITransaction" :
+      {
+        "POITransactionID" :
+        {
+          "TimeStamp" : "2020-02-05T16:26:27Z",
+          "TransactionID" : "57lm001580915718026.8535809157315054"
+        }
+      },
+      "ReversalReason" : "MerchantCancel"
+    }
+  }
+}

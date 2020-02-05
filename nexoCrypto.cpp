@@ -147,9 +147,7 @@ Json::Value nexoCrypto::decrypt(Json::Value &inOutJson)
             Json::CharReader *jsonReader = builder.newCharReader();
             std::string parseError;
             if (jsonReader &&
-                jsonReader->parse((const char *) decryptedData, (const char *) decryptedData + decryptedDataLen,
-                                  &response, &parseError)) {
-                std::cout << "Parse successful" << std::endl;
+                jsonReader->parse((const char *) decryptedData, (const char *) decryptedData + decryptedDataLen, &response, &parseError)) {
             } else {
                 std::cout << "Parse failed, reason:" << parseError << std::endl;
             }

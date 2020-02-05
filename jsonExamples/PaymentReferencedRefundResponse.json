@@ -1,0 +1,204 @@
+{
+  "SaleToPOIResponse" :
+  {
+    "MessageHeader" :
+    {
+      "MessageCategory" : "Reversal",
+      "MessageClass" : "Service",
+      "MessageType" : "Response",
+      "POIID" : "P400Plus-275103190",
+      "ProtocolVersion" : "3.0",
+      "SaleID" : "CashRegisterId",
+      "ServiceID" : "523690347"
+    },
+    "ReversalResponse" :
+    {
+      "POIData" :
+      {
+        "POITransactionID" :
+        {
+          "TimeStamp" : "2020-02-05T15:26:28.522Z",
+          "TransactionID" : "8835809163880965"
+        }
+      },
+      "PaymentReceipt" :
+      [
+        {
+          "DocumentQualifier" : "CashierReceipt",
+          "OutputContent" :
+          {
+            "OutputFormat" : "Text",
+            "OutputText" :
+            [
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "key=header1"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "key=header2"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=MERCHANT%20COPY&key=merchantTitle"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Time&value=15%3a26%3a27&key=txtime"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Date&value=05%2f02%2f2020&key=txdate"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=TID&value=P400Plus-275103190&key=tid"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=PTID&value=75103190&key=ptid"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Entry%20mode&value=Contactless%20chip&key=posEntryMode"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Card&value=%2a%2a%2a%2a%2a%2a%2a%2a%2a%2a%2a%2a0010&key=pan"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Tender&value=57lm001580915718026&key=txRef"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Type&value=GOODS_SERVICES&key=txtype"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=TOTAL&value=%e2%82%ac%20109.90&key=totalAmount"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=%2aVOID%20REQUESTED%2a&key=void"
+              }
+            ]
+          }
+        },
+        {
+          "DocumentQualifier" : "CustomerReceipt",
+          "OutputContent" :
+          {
+            "OutputFormat" : "Text",
+            "OutputText" :
+            [
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "key=header1"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "key=header2"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=CARDHOLDER%20COPY&key=cardholderHeader"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Time&value=15%3a26%3a27&key=txtime"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Date&value=05%2f02%2f2020&key=txdate"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=TID&value=P400Plus-275103190&key=tid"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=PTID&value=75103190&key=ptid"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Entry%20mode&value=Contactless%20chip&key=posEntryMode"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Card&value=%2a%2a%2a%2a%2a%2a%2a%2a%2a%2a%2a%2a0010&key=pan"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Tender&value=57lm001580915718026&key=txRef"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "name=Type&value=GOODS_SERVICES&key=txtype"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=TOTAL&value=%e2%82%ac%20109.90&key=totalAmount"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "EndOfLineFlag" : true,
+                "Text" : "key=filler"
+              },
+              {
+                "CharacterStyle" : "Bold",
+                "EndOfLineFlag" : true,
+                "Text" : "name=%2aVOID%20REQUESTED%2a&key=void"
+              }
+            ]
+          }
+        }
+      ],
+      "Response" :
+      {
+        "AdditionalResponse" : "tid=75103190&transactionType=GOODS_SERVICES&backendGiftcardIndicator=false&posadditionalamounts.originalAmountValue=10990&posAmountGratuityValue=0&giftcardIndicator=false&pspReference=8835809163880965&txtime=15%3a26%3a27&iso8601TxDate=2020-02-05T15%3a26%3a27.0000000%2b0000&posOriginalAmountValue=10990&txdate=05-02-2020&paymentMethod=mc&transactionReferenceNumber=8835809163880965&cardSummary=0010&posadditionalamounts.originalAmountCurrency=EUR&posAuthAmountCurrency=EUR&posAmountCashbackValue=0&posEntryMode=CLESS_CHIP&cardBin=%2a%2a%2a%2a%2a%2a&posAuthAmountValue=10990",
+        "Result" : "Success"
+      }
+    }
+  }
+}

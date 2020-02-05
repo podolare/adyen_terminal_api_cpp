@@ -1,0 +1,43 @@
+{
+  "SaleToPOIRequest" :
+  {
+    "MessageHeader" :
+    {
+      "MessageCategory" : "Payment",
+      "MessageClass" : "Service",
+      "MessageType" : "Request",
+      "POIID" : "P400Plus-275103190",
+      "ProtocolVersion" : "3.0",
+      "SaleID" : "CashRegisterId",
+      "ServiceID" : "1517056266"
+    },
+    "NexoBlob" : "edAtWKa+rw60KwlC21MlcEQEt4d4tZISMjHTosXVAW1D8+01aNAEP6466Qtgnx3B8hErp//nFbXaofIwlE3F79/Tqp95edOV0wdwqo+B+QiKdsk5Xvy9pFxLjgBpxN5XYhcHvZ1PVlxP3unTByezK76n/WFEcKb8j35sLdaVOP2FcPSwFcKGBtYFoMtEs7LfeBu+36ZZzZj4yNkwJnCEewWf8QnzDl0KbpWThm2KKjftRIGc+UNeLALkGzrklrYu/3qMEUtpAsiYtJeeXnb9+45N8+XnBzE0a2n3YyUI7RAtGbmZX0T2HhQy8oIa0oB/VtHAcPSLqHFrSKR8qjWQhaTbYXVHnPN2qj2KEtwXj5wKZHqtaHu/hX8MwkLhUobSS/67uS4NqgTxcIK2NgMHWTBdfjoBHDpExelVm/QMOx1NgFeEm2TgS2NvRFAxdE/xJLI4TA6767WJ5Re0wlWHLzPo6lUAYgki0Y34aLGgJRlYNu1ZwGt5P+Onx5Fh0LIZV41SkbFB9zJsfwTizthlZr2gGcJKTAmkuR5ikYPzG4oV9kdGtJ2ngbdfDh7C29ElCHWOuSm9yTHkN/35DbMRAUB/osJY7aNIXxxkov0pwCgdC2h8l5PDeWhsymhlz++YMPFyuk7TaX58BMkQ1lcWr8go5tepX2qP3rLqwmoKdS1Y8b94RfaZ1g1uS/ts6okGBrr47seJUdSj4lOWJ41JtBcquRkf7LPbnUq9rVko7YPsGiy4/x0tF1nV75gXddTz0YpntH7Uwym0MTsGajEaMjIwZnOtDpeN9sVWtfqA0l+LKtABCiDXF2A+Iv//EyPG",
+    "PaymentRequest" :
+    {
+      "PaymentTransaction" :
+      {
+        "AmountsReq" :
+        {
+          "Currency" : "EUR",
+          "RequestedAmount" : 109.90000000000001
+        }
+      },
+      "SaleData" :
+      {
+        "SaleTransactionID" :
+        {
+          "TimeStamp" : "2020-02-05T11:51:47Z",
+          "TransactionID" : "MerchantRef1517056266"
+        }
+      }
+    },
+    "SecurityTrailer" :
+    {
+      "AdyenCryptoVersion" : 1,
+      "Hmac" : "D3+yr7vxdEE5p0TjsUCDkV8MR2Xkg9u9I+ihXv1LeNg=",
+      "KeyIdentifier" : "mykey",
+      "KeyVersion" : 0,
+      "Nonce" : "8Vv1oSZQvCE53SwJTs7YqQ=="
+    }
+  }
+}
