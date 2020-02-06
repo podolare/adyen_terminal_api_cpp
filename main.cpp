@@ -2,6 +2,13 @@
 #include "nexoCrypto.h"
 #include "POI.h"
 #include <unistd.h>
+#include <thread>
+#include <iostream>
+
+void start_transaction(paymentRequest &request)
+{
+    request.send();
+}
 
 int main()
 {
@@ -11,12 +18,13 @@ int main()
             109.9,
             "EUR",
             paymentRequest::Sale,
-            paymentRequest::CloudAsync,
+            paymentRequest::CloudSync,
             NULL);
 
-    request.send();
-    sleep(2);
+    std::thread tx_thread{start_transaction, std::ref(request)};
+    sleep(10);
     request.cancel();
+    tx_thread.join();
 
     return 0;
 }

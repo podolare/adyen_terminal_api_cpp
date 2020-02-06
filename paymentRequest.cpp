@@ -86,7 +86,7 @@ void paymentRequest::send()
     httpRequest request(this->endPoint.c_str(), httpHeaders, requestData, POI::getDefaultTimeout());
     request.send();
 
-    if (request.getHttpResponseCode() != 0 && this->iType != CloudAsync)
+    if (request.getHttpResponseCode() == 200 && this->iType != CloudAsync)
     {
         this->parseResponse(request);
     }
@@ -105,8 +105,12 @@ void paymentRequest::cancel()
     std::map<std::string, std::string> httpHeaders;
     generateHttpHeaders(httpHeaders);
     std::string requestData = jsonRequest.toStyledString();
-    httpRequest request(POI::getSyncCloudUrl(), httpHeaders, requestData, POI::getDefaultTimeout());
+    httpRequest request(this->endPoint.c_str(), httpHeaders, requestData, POI::getDefaultTimeout());
     request.send();
+    if (request.getHttpResponseCode() == 200 && this->iType != CloudAsync)
+    {
+        this->parseResponse(request);
+    }
 }
 
 bool paymentRequest::parseResponse(httpRequest &request)
