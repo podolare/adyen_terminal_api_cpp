@@ -15,7 +15,7 @@ add_executable(
         terminal_api_poc
         main.cpp
         httpRequest.cpp
-        paymentRequest.cpp
+        terminalRequest.cpp
         POI.cpp
         nexoCrypto.cpp
         base64.cpp

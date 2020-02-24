@@ -16,6 +16,9 @@ public:
     static const char *getSyncCloudUrl() { return syncCloudUrl; }
     static const char *getAsyncCloudUrl() { return asyncCloudUrl; }
     static const char *getKeyIdentifier() { return keyIdentifier; }
+    static const char *getVirtualReceiptRequestData() { return virtualReceiptRequestData; }
+    static const char *getIdleScreenRequestData() { return idleScreenRequestData; }
+    static const char *getBarcodeRequestData() { return barcodeRequestData; }
     static const int getKeyVersion() { return keyVersion; }
     static const int getAdyenCryptoVersion() { return adyenCrypto; }
     static const int getDefaultTimeout() { return defaultTimeout; }
@@ -28,6 +31,9 @@ private:
     static const char asyncCloudUrl[];
     static const char cryptoPassphrase[];
     static const char keyIdentifier[];
+    static const char virtualReceiptRequestData[];
+    static const char idleScreenRequestData[];
+    static const char barcodeRequestData[];
     static const int keyVersion;
     static const int adyenCrypto;
     static const int defaultTimeout;

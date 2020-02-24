@@ -130,14 +130,14 @@ bool httpRequest::send()
     curl_global_init(CURL_GLOBAL_ALL);
     CURL *curl = curl_easy_init();
     if(curl) {
-        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 1);
-        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 2);
-        curl_easy_setopt(curl, CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1_2 | CURL_SSLVERSION_MAX_DEFAULT);
+        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0);
+//        curl_easy_setopt(curl, CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1_2 | CURL_SSLVERSION_MAX_DEFAULT);
         if (strcmp(this->url.c_str(), POI::getTerminalAddress()) == 0) {
             char cwd[PATH_MAX];
             if (getcwd(cwd, sizeof(cwd)) != NULL) {
-                curl_easy_setopt(curl, CURLOPT_CAPATH, cwd);
-                curl_easy_setopt(curl, CURLOPT_CAINFO, "test.crt");
+//                curl_easy_setopt(curl, CURLOPT_CAPATH, cwd);
+//                curl_easy_setopt(curl, CURLOPT_CAINFO, "test.crt");
                 curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0);
             }
         }

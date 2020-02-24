@@ -2,24 +2,24 @@
 // Created by Przemyslaw Podolski on 28/01/2020.
 //
 
-#ifndef TERMINAL_API_POC_PAYMENTREQUEST_H
-#define TERMINAL_API_POC_PAYMENTREQUEST_H
+#ifndef TERMINAL_API_POC_TERMINALREQUEST_H
+#define TERMINAL_API_POC_TERMINALREQUEST_H
 
 #include <cstdint>
 #include "httpRequest.h"
 #include "POI.h"
 
-class paymentRequest
+class terminalRequest
 {
 public:
     enum integrationType { CloudSync, CloudAsync, Local, LocalEncrypted };
-    enum transactionType { Sale, UnreferencedRefund, ReferencedRefund, CancelRefund, Cancel };
+    enum requestType { Sale, UnreferencedRefund, ReferencedRefund, CancelRefund, Cancel, VirtualReceipt, Display, Barcode, Input };
 
-    paymentRequest(double amount,
-            const char *currency,
-            transactionType txType,
-            integrationType iType,
-            const char *refundTransactionId): amount(amount), currency(currency), txType(txType), iType(iType)
+    terminalRequest(double amount,
+                    const char *currency,
+                    requestType reqType,
+                    integrationType iType,
+                    const char *refundTransactionId = NULL): amount(amount), currency(currency), requestType(reqType), iType(iType)
     {
         if (refundTransactionId)
         {
@@ -28,6 +28,16 @@ public:
         this->serviceId = generateServiceID();
         this->timestamp = generateTimestamp();
         this->endPoint = setEndPoint();
+    };
+
+    terminalRequest(integrationType iType, const char *outputXHTML = NULL, requestType type = VirtualReceipt)
+    {
+        this->requestType = type;
+        this->iType = iType;
+        this->endPoint = setEndPoint();
+        this->serviceId = generateServiceID();
+        this->timestamp = generateTimestamp();
+        this->displayData = outputXHTML;
     };
 
     void send();
@@ -44,20 +54,24 @@ private:
     void addPaymentRequest(Json::Value &request);
     void addReversalRequest(Json::Value &request);
     void addAbortRequest(Json::Value &request);
+    void addDisplayRequest(Json::Value &request, enum requestType type);
+
     static void generateHttpHeaders(std::map<std::string, std::string> &httpHeaders);
 
     bool parseResponse(httpRequest &);
 
     double amount;
     std::string currency;
-    transactionType txType;
+    requestType requestType;
     integrationType iType;
     std::string timestamp;
     std::string serviceId;
     std::string endPoint;
     std::string refundTransactionId;
+    std::string displayData;
+
     Json::Value jsonResponse;
 };
 
 
-#endif //TERMINAL_API_POC_PAYMENTREQUEST_H
+#endif //TERMINAL_API_POC_TERMINALREQUEST_H

@@ -1,0 +1,34 @@
+{
+  "SaleToPOIRequest" :
+  {
+    "DisplayRequest" :
+    {
+      "DisplayOutput" :
+      [
+        {
+          "Device" : "CustomerDisplay",
+          "InfoQualify" : "Display",
+          "OutputContent" :
+          {
+            "OutputBarcode" :
+            {
+              "BarcodeType" : "QRCode",
+              "BarcodeValue" : "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"
+            },
+            "OutputFormat" : "BarCode"
+          }
+        }
+      ]
+    },
+    "MessageHeader" :
+    {
+      "MessageCategory" : "Display",
+      "MessageClass" : "Service",
+      "MessageType" : "Request",
+      "POIID" : "P400Plus-275086634",
+      "ProtocolVersion" : "3.0",
+      "SaleID" : "CashRegisterId",
+      "ServiceID" : "79778065"
+    }
+  }
+}
